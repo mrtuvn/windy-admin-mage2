@@ -1,0 +1,40 @@
+{
+    "name": "windyecommerce/mage2windy",
+    "type": "magento2-theme",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Tu Nguyen",
+            "email": "tuna9x.it@gmail.com"
+        }
+    ],
+    "description": "Magento 2 Admin Windy Theme",
+    "homepage": "https://windyecommerce/mage2windy",
+    "keywords": [
+        "magento",
+        "magento2",
+        "admin theme",
+        "core"
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "require": {
+        "magento/framework": ">=102.0.0",
+        "magento/module-backend": ">=101.0.0"
+    },
+    "autoload": {
+        "files": [
+            "src/module-windyadmin-theme/registration.php",
+            "src/theme-adminhtml-windy/registration.php"
+        ],
+        "psr-4": {
+            "WindyEcommerce\\Mage2WindyAdminModule\\": "src/module-windyadmin-theme"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

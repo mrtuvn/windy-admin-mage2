@@ -1,0 +1,15 @@
+{
+    "name": "Windy Magento 2 Admin Theme",
+    "description": "Windy theme for Admin Panel in Magento 2",
+    "license": "OSL-3.0",
+    "type": "magento2-theme",
+    "version": "1.1.0",
+    "require": {
+        "magento/framework": ">=102.0.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    }
+}

@@ -1,0 +1,6 @@
+/* small tweek css */
+
+img {
+    display: inline-block;
+    background-repeat: none;
+}

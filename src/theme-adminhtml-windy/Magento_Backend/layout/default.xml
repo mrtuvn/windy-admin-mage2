@@ -1,5 +1,18 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="robots" content="NOINDEX,NOFOLLOW"/>
+        <remove src="css/styles-old.css"/>
+        <css src="css/styles.css"/>
+        <css src="css/custom.css" />
     </head>
+    <body>
+        <referenceContainer name="root">
+            <container name="header.top" htmlClass="header-top" htmlTag="div" before="-" />
+        </referenceContainer>
+
+        <referenceContainer name="header.top">
+            <block name="intro" template="Magento_Backend::heading.phtml" />
+        </referenceContainer>
+    </body>
 </page>

@@ -9,6 +9,7 @@
   <module name="WindyEcommerce_Mage2WindyAdminModule" setup_version="1.0.1">
     <sequence>
         <module name="Magento_Theme"/>
+        <module name="Magento_Backend"/>
     </sequence>
   </module>
 </config>

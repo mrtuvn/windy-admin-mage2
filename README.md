@@ -11,8 +11,11 @@ Add
             "url":  "git@github.com:mrtuvn/windy-admin-mage2.git"
         }
     }
-In require section 
+In require section
 
 add
 "windyecommerce/mage2windy": "1.0.0"
 
+or run 
+    composer require windyecommerce/mage2windy "1.0.0"
+    

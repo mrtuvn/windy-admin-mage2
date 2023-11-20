@@ -2,6 +2,7 @@
     "name": "windyecommerce/mage2windy",
     "type": "magento2-theme",
     "license": "OSL-3.0",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Tu Nguyen",

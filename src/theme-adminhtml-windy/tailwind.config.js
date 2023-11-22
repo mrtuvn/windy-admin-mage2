@@ -3,14 +3,19 @@ module.exports = {
     content: [
         "./**/templates/*.phtml",
         "./**/layout/*.xml",
-        "./view/**/templates/*.html",
-        "./view/**/templates/**/*.html",
-        "./**/web/templates/*.html",
-        "./**/web/template/*.html",
-        "./**/web/template/**/*.html"
+        "./view/**/*.html",
+        "./**/template/*.html",
+        "./**/templates/*.html"
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                'sans': ['Roboto'],
+                'display': ['Roboto'],
+                'body': ['Roboto'],
+            },
+
+        },
     },
     plugins: [],
 }

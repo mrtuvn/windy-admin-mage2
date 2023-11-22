@@ -1,0 +1,26 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+declare(strict_types=1);
+
+$loaderIcon = $this->getViewFileUrl('images/loader.svg');
+?>
+<!doctype html>
+<html <?= /* @noEscape */ $htmlAttributes ?>>
+    <head <?= /* @noEscape */ $headAttributes ?>>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link src_type="url" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+        <?= /* @noEscape */ $requireJs ?>
+        <?= /* @noEscape */ $headContent ?>
+        <?= /* @noEscape */ $headAdditional ?>
+    </head>
+    <body data-container="body"
+          data-mage-init='{"loaderAjax": {}, "loader": { "icon": "<?= /* @noEscape */ $loaderIcon ?>"}}'
+        <?= /* @noEscape */ $bodyAttributes ?>>
+        <?= /* @noEscape */ $layoutContent ?>
+    </body>
+</html>

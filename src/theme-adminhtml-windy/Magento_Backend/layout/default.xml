@@ -1,18 +1,27 @@
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="robots" content="NOINDEX,NOFOLLOW"/>
         <remove src="css/styles-old.css"/>
-        <css src="css/styles.css"/>
-        <css src="css/custom.css" />
+        <remove src="css/styles.css"/>
+        <css src="css/style.css"/><!-- new styles tailwind output final -->
+        <css src="css/custom.css"/><!-- custom styles not from tailwind -->
     </head>
     <body>
+        <referenceContainer name="before.body.end">
+            <block name="script" template="Magento_Backend::script.phtml" />
+        </referenceContainer>
+
         <referenceContainer name="root">
             <container name="header.top" htmlClass="header-top" htmlTag="div" before="-" />
         </referenceContainer>
 
         <referenceContainer name="header.top">
             <block name="intro" template="Magento_Backend::heading.phtml" />
+        </referenceContainer>
+
+        <referenceContainer name="page.menu">
+            <block class="WindyEcommerce\Mage2WindyAdminModule\Block\Menu" name="menu" as="menu" template="Magento_Backend::menu.phtml"/>
         </referenceContainer>
     </body>
 </page>

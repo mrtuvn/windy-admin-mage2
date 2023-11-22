@@ -1,6 +1,11 @@
 /* small tweek css */
 
-img {
-    display: inline-block;
-    background-repeat: none;
+.menu-wrapper:before,
+.admin__menu .level-0._active>a {
+    background-color: #000;
+}
+
+
+.admin__menu .level-0>.submenu, #menu-menuamasty-base-menu .ambase-submenu.-second {
+    background-color: #333;
 }
